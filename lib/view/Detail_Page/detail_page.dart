@@ -36,22 +36,69 @@ class DetailPage extends StatelessWidget {
                           ? newsController
                               .newsModal.value!.articles[SelectIndex].urlToImage
                           : (SelectData == newsController2.toString())
-                              ? newsController2.newsModal.value!
+                              ? newsController2.teslaModal.value!
                                   .articles[SelectIndex].urlToImage
                               : (SelectData == newsController3.toString())
-                                  ? newsController3.newsModal.value!
+                                  ? newsController3.countryModal.value!
                                       .articles[SelectIndex].urlToImage
                                   : (SelectData == newsController4.toString())
-                                      ? newsController4.newsModal.value!
+                                      ? newsController4.headlinesModal.value!
                                           .articles[SelectIndex].urlToImage
-                                      : newsController5.newsModal.value!
+                                      : newsController5.everythingModal.value!
                                           .articles[SelectIndex].urlToImage),
                       fit: BoxFit.cover),
                 ),
-                child: Text(newsController
-                    .newsModal.value!.articles[SelectIndex].author.toString(),style: TextStyle(fontSize: 40,color: Colors.black87),),
+                
               ),
-            )
+            ),
+            Text(
+              (SelectData == newsController.toString())
+                  ? newsController
+                  .newsModal.value!.articles[SelectIndex].source.name
+                  : (SelectData == newsController2.toString())
+                  ? newsController2
+                  .teslaModal.value!.articles[SelectIndex].source.name
+                  : (SelectData == newsController3.toString())
+                  ? newsController3.countryModal.value!
+                  .articles[SelectIndex].source.name
+                  : (SelectData == newsController4.toString())
+                  ? newsController4.headlinesModal.value!
+                  .articles[SelectIndex].source.name
+                  : newsController5.everythingModal.value!
+                  .articles[SelectIndex].source.name,
+            ),
+            Text(
+              (SelectData == newsController.toString())
+                  ? newsController
+                  .newsModal.value!.articles[SelectIndex].description
+                  : (SelectData == newsController2.toString())
+                  ? newsController2
+                  .teslaModal.value!.articles[SelectIndex].description
+                  : (SelectData == newsController3.toString())
+                  ? newsController3.countryModal.value!
+                  .articles[SelectIndex].description
+                  : (SelectData == newsController4.toString())
+                  ? newsController4.headlinesModal.value!
+                  .articles[SelectIndex].description
+                  : newsController5.everythingModal.value!
+                  .articles[SelectIndex].description,
+            ),
+            Text(
+              (SelectData == newsController.toString())
+                  ? newsController
+                  .newsModal.value!.articles[SelectIndex].content
+                  : (SelectData == newsController2.toString())
+                  ? newsController2
+                  .teslaModal.value!.articles[SelectIndex].content
+                  : (SelectData == newsController3.toString())
+                  ? newsController3.countryModal.value!
+                  .articles[SelectIndex].content
+                  : (SelectData == newsController4.toString())
+                  ? newsController4.headlinesModal.value!
+                  .articles[SelectIndex].content
+                  : newsController5.everythingModal.value!
+                  .articles[SelectIndex].content,
+            ),
           ],
         ),
       ),

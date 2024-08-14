@@ -6,8 +6,11 @@ import '../News_modal/news_modal.dart';
 class NewsController extends GetxController
 {
   ApiHelper apiHelper = ApiHelper();
-  Rx<NewsModal?> newsModal = Rx<NewsModal?>(null);
-
+  Rx<NewsModal?>  newsModal = Rx<NewsModal?>(null);
+  // Rx<NewsModal?> teslaModal = Rx<NewsModal?>(null);
+  // Rx<NewsModal?> countryModal = Rx<NewsModal?>(null);
+  // Rx<NewsModal?>  headlinesModal = Rx<NewsModal?>(null);
+  // Rx<NewsModal?>  everythingModal = Rx<NewsModal?>(null);
 
   Future<void> fromMap1() async {
     try {
@@ -31,20 +34,21 @@ class NewsController extends GetxController
 class NewsController2 extends GetxController
 {
   ApiHelper apiHelper = ApiHelper();
-  Rx<NewsModal?> newsModal = Rx<NewsModal?>(null);
+  Rx<NewsModal?> teslaModal = Rx<NewsModal?>(null);
+  // Rx<NewsModal?> newsModal = Rx<NewsModal?>(null);
 
   Future<void> fromMap2() async {
     try {
       final data = await apiHelper.api_helper2();
-      newsModal.value = NewsModal.fromApi(data);
-      print(newsModal.value);
+      teslaModal.value = NewsModal.fromApi(data);
+      print(teslaModal.value);
     } catch (e) {
       print('Error fetching news: $e');
 
     }
   }
   Future<NewsModal?> getNews() async {
-    return newsModal.value;
+    return teslaModal.value;
   }
   NewsController2()
   {
@@ -56,20 +60,21 @@ class NewsController2 extends GetxController
 class NewsController3 extends GetxController
 {
   ApiHelper apiHelper = ApiHelper();
-  Rx<NewsModal?> newsModal = Rx<NewsModal?>(null);
+  Rx<NewsModal?> countryModal = Rx<NewsModal?>(null);
+  // Rx<NewsModal?> newsModal = Rx<NewsModal?>(null);
 
   Future<void> fromMap3() async {
     try {
       final data = await apiHelper.api_helper3();
-      newsModal.value = NewsModal.fromApi(data);
-      print(newsModal.value);
+      countryModal.value = NewsModal.fromApi(data);
+      print(countryModal.value);
     } catch (e) {
       print('Error fetching news: $e');
 
     }
   }
   Future<NewsModal?> getNews() async {
-    return newsModal.value;
+    return countryModal.value;
   }
   NewsController3()
   {
@@ -80,20 +85,21 @@ class NewsController3 extends GetxController
 class NewsController4 extends GetxController
 {
   ApiHelper apiHelper = ApiHelper();
-  Rx<NewsModal?> newsModal = Rx<NewsModal?>(null);
+  Rx<NewsModal?>  headlinesModal = Rx<NewsModal?>(null);
+  // Rx<NewsModal?> newsModal = Rx<NewsModal?>(null);
 
   Future<void> fromMap4() async {
     try {
       final data = await apiHelper.api_helper4();
-      newsModal.value = NewsModal.fromApi(data);
-      print(newsModal.value);
+      headlinesModal.value = NewsModal.fromApi(data);
+      print(headlinesModal.value);
     } catch (e) {
       print('Error fetching news: $e');
 
     }
   }
   Future<NewsModal?> getNews() async {
-    return newsModal.value;
+    return headlinesModal.value;
   }
   NewsController4()
   {
@@ -104,20 +110,20 @@ class NewsController4 extends GetxController
 class NewsController5 extends GetxController
 {
   ApiHelper apiHelper = ApiHelper();
-  Rx<NewsModal?> newsModal = Rx<NewsModal?>(null);
-
+  // Rx<NewsModal?> newsModal = Rx<NewsModal?>(null);
+  Rx<NewsModal?>  everythingModal = Rx<NewsModal?>(null);
   Future<void> fromMap5() async {
     try {
       final data = await apiHelper.api_helper5();
-      newsModal.value = NewsModal.fromApi(data);
-      print(newsModal.value);
+      everythingModal.value = NewsModal.fromApi(data);
+      print(everythingModal.value);
     } catch (e) {
       print('Error fetching news: $e');
 
     }
   }
   Future<NewsModal?> getNews() async {
-    return newsModal.value;
+    return everythingModal.value;
   }
   NewsController5()
   {
