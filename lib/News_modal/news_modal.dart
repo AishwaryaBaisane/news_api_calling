@@ -3,10 +3,10 @@ class NewsModal {
 
   NewsModal({required this.articles});
 
-  factory NewsModal.fromApi(Map<String, dynamic> json) {
+  factory NewsModal.fromApi(Map<dynamic, dynamic> json) {
     return NewsModal(
-      articles: (json['articles'] as List<dynamic>)
-          .map((e) => Articles.fromApi(e as Map<String, dynamic>))
+      articles: (json['articles'] as List<dynamic>?)
+          !.map((e) => Articles.fromApi(e as Map<dynamic, dynamic>))
           .toList(),
     );
   }
@@ -35,7 +35,7 @@ class Articles {
 
   factory Articles.fromApi(Map json) {
     return Articles(
-      source: Source.fromApi(json['source'] as Map<String, dynamic>),
+      source: Source.fromApi(json['source'] as Map<dynamic, dynamic>),
       author: json['author'] ?? '',
       title: json['title'] ?? '',
       description: json['description'] ?? '',
@@ -53,7 +53,7 @@ class Source {
 
   Source({required this.name});
 
-  factory Source.fromApi(Map<String, dynamic> json) {
+  factory Source.fromApi(Map json) {
     return Source(name: json['name'] ?? '');
   }
 }

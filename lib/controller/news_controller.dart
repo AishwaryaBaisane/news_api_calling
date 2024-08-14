@@ -3,20 +3,17 @@ import 'package:news_api_calling/Api_helper/news_apihelper.dart';
 
 import '../News_modal/news_modal.dart';
 
+
 class NewsController extends GetxController
 {
   ApiHelper apiHelper = ApiHelper();
   Rx<NewsModal?>  newsModal = Rx<NewsModal?>(null);
-  // Rx<NewsModal?> teslaModal = Rx<NewsModal?>(null);
-  // Rx<NewsModal?> countryModal = Rx<NewsModal?>(null);
-  // Rx<NewsModal?>  headlinesModal = Rx<NewsModal?>(null);
-  // Rx<NewsModal?>  everythingModal = Rx<NewsModal?>(null);
 
   Future<void> fromMap1() async {
     try {
       final data = await apiHelper.api_helper1();
       newsModal.value = NewsModal.fromApi(data);
-      print(newsModal.value);
+      print(newsModal.value!.articles.length);
     } catch (e) {
       print('Error fetching news: $e');
 
@@ -55,7 +52,7 @@ class NewsController2 extends GetxController
     fromMap2();
   }
 }
-//
+// //
 //
 class NewsController3 extends GetxController
 {

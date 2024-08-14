@@ -48,7 +48,7 @@ class DetailPage extends StatelessWidget {
                                           .articles[SelectIndex].urlToImage),
                       fit: BoxFit.cover),
                 ),
-                
+
               ),
             ),
             Text(
