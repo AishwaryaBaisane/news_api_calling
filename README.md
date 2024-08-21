@@ -25,5 +25,9 @@ Stay updated with the latest headlines and breaking news from around the world. 
 </p>
 
 
+https://github.com/user-attachments/assets/01c90192-34b6-4cb4-80e8-bbbf081d570b
+
+
+
 
 
