@@ -16,12 +16,14 @@ Stay updated with the latest headlines and breaking news from around the world. 
 - Dive into the current news and make [Your News App Name] your go-to source for reliable and timely information!
 
 <p>
-    <img src = "https://github.com/user-attachments/assets/d12c2d80-8ac6-4d0e-b5ce-ed3299563f14" height = 25% width = 24%>
-     <img src = "https://github.com/user-attachments/assets/8f06cf50-5427-41c5-99f0-3d35bc2710f1" height = 25% width = 24%>
-   <img src = "https://github.com/user-attachments/assets/8ac1e87a-95a7-4a62-843d-cb681903a49b" height = 25% width = 24%>
-   <img src = "https://github.com/user-attachments/assets/8aeb53b1-e74f-4506-95a5-d411e94c68b6" height = 25% width = 24%>
+    <img src = "https://github.com/user-attachments/assets/b102b560-4147-4b54-b62e-ff0ca6a71888" height = 25% width = 24%>
+    <img src = "https://github.com/user-attachments/assets/6935c8f7-f013-4358-85f9-2197d83b237a" height = 25% width = 24%>
+ <img src= "https://github.com/user-attachments/assets/11b144d0-185e-4762-9ce3-2542f24ff054" height = 25% width = 24%>
+   <img src = "https://github.com/user-attachments/assets/a57d3751-a6f9-49b1-93e9-33c3934794c2" height = 25% width = 24%>
+   
 
 </p>
+
 
 
 
